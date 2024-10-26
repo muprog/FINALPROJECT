@@ -1,6 +1,6 @@
 const express=require('express');
 const app=express();
-const port=8000;
+const port=process.env.PORT||8000;
 const cookieParser=require('cookie-parser')
 const dotenv=require('dotenv').config();
 const mongoose=require('mongoose');
